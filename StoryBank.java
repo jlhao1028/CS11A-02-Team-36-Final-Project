@@ -9,6 +9,7 @@ the HickeyLibs program can call upon.
 */
 public class StoryBank{
   String story = "";
+  String[] madLib = new String[150];
   //Initialize 3-5 stories stored in arrays
   //Think of how to put them into a method to call them into main class and into
   //a new modifiable array.
@@ -34,31 +35,21 @@ public class StoryBank{
            story = "StoryThree.txt";
           break;
         default:
-          //code that will chose a random text file
           storyNumber=(rand.nextInt(3)+1);
       }
   }
   /**
-  * The printStory method outputs the initial story, with blanks to the user
-  * before they chose the blanks to fill in.
+  * The convertStory method takes the story and converts it into an array with
+  * blank/null voids to mark a blank spot.
   * @author Jonah Sanders
   * @version 1.1
   * @since 2018-11-7
   */
-  public static void printStory(String story){
+  public static void convertStory(String story){
     storyCall(2/*INPUT)*/);
-    try {
-            File filename = new File(story);
-            Scanner fileReader = new Scanner(filename);
-            int counter=1;
-            while (fileReader.hasNextLine()) {
-                String line = fileReader.nextLine();
-                System.out.printf("%5d: %s%n",counter++,line);
-            }
-            fileReader.close();
-
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+      String[] madLib = story.split("\\s+");
+      for (int i = 0; i < madLib.length; i++) {
+        madLib[i] = madLib[i].replaceAll("[^\\w]", "");
   }
+}
 }
