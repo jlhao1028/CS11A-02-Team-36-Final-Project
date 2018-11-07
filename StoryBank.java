@@ -21,21 +21,27 @@ public class StoryBank{
   public static int storyCall(int storyNumber){
       switch(storyNumber){
         case 1:
-          System.out.println(Arrays.toString(storyOne));
+          //code that reads from txt file storyOne
+          //System.out.println(Arrays.toString(storyOne));
           break;
         case 2:
+            //code that reads from txt file storyOne
           System.out.println(Arrays.toString(storyTwo));
           break;
         case 3:
+          //code that reads from txt file storyOne
           System.out.println(Arrays.toString(storyThree));
           break;
         case 4:
-          System.out.println(Arrays.toString(storyFour));
+          //code that reads from txt file storyOne
+          out.println(Arrays.toString(storyFour));
           break;
         case 5:
+          //code that reads from txt file storyOne
           System.out.println(Arrays.toString(storyFive));
           break;
         default:
+          //code that reads from txt file storyOne
           storyNumber=(Math.Random(4)+1);
       }
   }
