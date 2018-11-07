@@ -1,3 +1,4 @@
+import java.util.*;
 /**
 * The StoryBank class functions as the storage program of all narratives that
 the HickeyLibs program can call upon.
@@ -17,7 +18,25 @@ public class StoryBank{
   * @version 1.0
   * @since 2018-11-6
   */
-  //public static int storyCall(int storyNumber){
-
-//  }
+  public static int storyCall(int storyNumber){
+      switch(storyNumber){
+        case 1:
+          System.out.println(Arrays.toString(storyOne));
+          break;
+        case 2:
+          System.out.println(Arrays.toString(storyTwo));
+          break;
+        case 3:
+          System.out.println(Arrays.toString(storyThree));
+          break;
+        case 4:
+          System.out.println(Arrays.toString(storyFour));
+          break;
+        case 5:
+          System.out.println(Arrays.toString(storyFive));
+          break;
+        default:
+          storyNumber=(Math.Random(4)+1);
+      }
+  }
 }
