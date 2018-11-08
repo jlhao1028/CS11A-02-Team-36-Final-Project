@@ -45,11 +45,9 @@ public class StoryBank{
   * @version 1.1
   * @since 2018-11-7
   */
-  public static void convertStory(String story){
+  public static String[] convertStory(String story){
     storyCall(2/*INPUT)*/);
-      String[] madLib = story.split("\\s+");
-      for (int i = 0; i < madLib.length; i++) {
-        madLib[i] = madLib[i].replaceAll("[^\\w]", "");
+    String[] madLib = story.split(" ");
+    return madLib;
   }
-}
 }
