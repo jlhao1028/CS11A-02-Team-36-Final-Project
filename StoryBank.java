@@ -1,5 +1,5 @@
 import java.util.*;
-import java.io.File;
+import java.io.*;
 /**
 * The StoryBank class functions as the storage program of all narratives that
 the HickeyLibs program can call upon.
