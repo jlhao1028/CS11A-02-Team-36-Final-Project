@@ -8,8 +8,6 @@ the HickeyLibs program can call upon.
 * @since 2018-11-6
 */
 public class StoryBank{
-  String story = "";
-  String[] madLib = new String[150];
   //Initialize 3-5 stories stored in arrays
   //Think of how to put them into a method to call them into main class and into
   //a new modifiable array.

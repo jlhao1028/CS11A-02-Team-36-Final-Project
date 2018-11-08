@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 /**
 * The HickeyLibs class generates a preset random storyline and allows the user to
 * fill in the blanks with nouns, adjectives, verbs, adverbs, and interjections to
