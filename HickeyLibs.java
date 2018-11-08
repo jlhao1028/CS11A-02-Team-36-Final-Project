@@ -10,5 +10,7 @@ import java.io.*;
 * @since 2018-11-6
 */
 public class HickeyLibs{
+  public static void main(String[] args) {
 
+  }
 }
